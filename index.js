@@ -3,7 +3,9 @@ import cors from 'cors'
 import  { v4 as uuid }  from 'uuid'
 
 const server = express();
-server.use(cors());
+server.use(cors({
+    origin: 'http://localhost:3000'
+}));
 server.use(express.json());
 
 let tasks = []; // in-memory store
