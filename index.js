@@ -4,7 +4,7 @@ import  { v4 as uuid }  from 'uuid'
 
 const server = express();
 server.use(cors({
-    origin: 'http://localhost:3000'
+    origin: ['http://localhost:3000', 'https://todo-server-exercise-3.netlify.app']
 }));
 server.use(express.json());
 
